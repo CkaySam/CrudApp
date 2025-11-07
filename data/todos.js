@@ -6,7 +6,7 @@ export const data = [
 },
 {
     "id": 2,
-    "title": "But groceries",
+    "title": "Buy groceries",
     "completed": false
   },
 {
@@ -47,6 +47,6 @@ export const data = [
 {
     "id": 10,
     "title": "Finish the project report",
-    "completed": false
+    "completed": true
   },
 ]
