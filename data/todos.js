@@ -6,7 +6,7 @@ export const data = [
 },
 {
     "id": 2,
-    "title": "Buy groceries",
+    "title": "Buy groceries at Walmart",
     "completed": false
   },
 {
