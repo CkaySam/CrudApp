@@ -1,14 +1,13 @@
 import { ThemeContext } from '@/context/ThemeContext';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { useContext, useEffect, useState } from "react";
-import { Pressable, StyleSheet, Text, TextInput, View } from "react-native";
+import { Pressable, StatusBar, StyleSheet, Text, TextInput, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { Inter_500Medium, useFonts } from '@expo-google-fonts/inter';
 import Octicons from '@expo/vector-icons/Octicons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useRouter } from 'expo-router';
-import { StatusBar } from 'react-native';
 import Animated, { LinearTransition } from 'react-native-reanimated';
 
 import { data } from "../data/todos";
@@ -39,7 +38,7 @@ export default function Index() {
     }
 
     fetchData();
-  },[data])
+  }, [])
 
   useEffect(() => {
     const storeData = async () => {
